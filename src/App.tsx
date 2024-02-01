@@ -6,7 +6,7 @@ import TaxAmountInputForm from "./form/TaxAmountInputForm";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="flex items-center justify-between flex-col">
+      <div className="lg:flex items-center justify-between flex-col">
         <div className="header h-[70px] w-full mb-10">
           <Header />
         </div>

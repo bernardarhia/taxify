@@ -70,7 +70,7 @@ const TaxAmountInputForm = () => {
     setTaxComputation(computedTaxation);
   }, [inputFields]);
   return (
-    <div className="form-container lg:max-w-[500px] md:max-w-[500px]">
+    <div className="form-container lg:max-w-[500px] md:max-w-[500px] w-[95%] m-auto">
       <div className="mb-10">
         <h1 className="font-bold text-2xl mb-5 text-center">
           CALCULATE YOUR PAYE

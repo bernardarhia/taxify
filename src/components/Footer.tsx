@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="last-updated text-center">
         Last updated: <b>1st February, 2024.</b>
       </div>
-      <div className="footer-content mt-10 flex items-center justify-between w-[900px] m-auto">
+      <div className="footer-content mt-10 flex lg:flex-row md:flex-row items-center justify-between lg:w-[800px] m-auto flex-col gap-y-5">
         <div className="socials flex items-center  gap-5">
           <a href="https://twitter.com/Everichbernz" target="_blank">
             <Twitter />
@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="content flex gap-5">
-            Made With <Heart fill="red" strokeWidth={0} /> by Bernard Arhia
+          Made With <Heart fill="red" strokeWidth={0} /> by Bernard Arhia
         </div>
       </div>
     </div>
