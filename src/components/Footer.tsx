@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="content flex gap-5">
-            Made With <Heart /> by Bernard Arhia
+            Made With <Heart fill="red" strokeWidth={0} /> by Bernard Arhia
         </div>
       </div>
     </div>
