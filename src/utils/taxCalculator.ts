@@ -17,7 +17,7 @@ abstract class TaxCalculatorProps {
     abstract computePaye(params: ComputePayeProps): any;
 }
 
-export class TaxCalculator extends TaxCalculatorProps {
+ class TaxCalculator extends TaxCalculatorProps {
     calculatePaye(
         params: CalculatePayeProps
     ): ReturnType<typeof this.computePaye> {
@@ -75,11 +75,12 @@ export class TaxCalculator extends TaxCalculatorProps {
         const netIncome = grossIncome + allowance - totalTax - ssnitContribution;
 
         return {
-            incomeTax: totalTax.toFixed(2),
-            ssnit: ssnitContribution.toFixed(2),
-            netIncome: netIncome.toFixed(2),
+            incomeTax: +totalTax.toFixed(2),
+            ssnit: +ssnitContribution.toFixed(2),
+            netIncome: +netIncome.toFixed(2),
             computationTaxBreakdown,
         };
     }
 }
 
+export const taxCalculator = new TaxCalculator;
