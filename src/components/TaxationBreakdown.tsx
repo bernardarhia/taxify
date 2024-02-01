@@ -22,7 +22,7 @@ const TaxationBreakdown: FC<{ taxBreakDown: TaxationBreakdownProps[] }> = ({
   const calculateTotalAmountTaxable = () => {
     return taxBreakDown.reduce((a, b) => {
       return a + b.taxAmount;
-    }, 0);
+    }, 0).toFixed(2);
   };
 
   return (
